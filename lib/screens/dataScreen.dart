@@ -7,19 +7,19 @@ class ThirdPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TERCERA PANTALLA DATOS'),
+        title: const Text('TERCERA PANTALLA DATOS'),
       ),
       body: Center(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               Image.asset(
                 'assets/img/LogoF.png',
                 width: 170.0,
               ),
-              Text(
+              const Text(
                 'ISAAC RUBÍN JIMÉNEZ RETANA',
                 style: TextStyle(
                   fontSize: 15.0,
@@ -27,8 +27,8 @@ class ThirdPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(width: 10.0),
-              Text(
+              const SizedBox(width: 10.0),
+              const Text(
                   'Tecnologías de la Información Área Desarrollo de Software Multiplataforma',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -36,7 +36,7 @@ class ThirdPage extends StatelessWidget {
                     color: Color.fromARGB(255, 2, 53, 255),
                     fontFamily: 'Raleway',
                   )),
-              SizedBox(width: 10.0),
+              const SizedBox(width: 10.0),
               ElevatedButton(
                 child: const Text('Regresar'),
                 onPressed: () => Navigator.pop(context),
